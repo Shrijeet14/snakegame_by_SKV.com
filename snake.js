@@ -75,15 +75,15 @@ function gameheart() {
         }
             snakeElement.classList.add('snakebody');
             gameboard.appendChild(snakeElement);
-        
-    })
-    //display food
-    khanaElement = document.createElement('div');
-    khanaElement.style.gridRowStart = khana.y;
-    khanaElement.style.gridColumnStart = khana.x;
-    khanaElement.classList.add('food');
-    gameboard.appendChild(khanaElement);
-}
+        })
+        //display food
+        khanaElement = document.createElement('div');
+        khanaElement.style.gridRowStart = khana.y;
+        khanaElement.style.gridColumnStart = khana.x;
+        khanaElement.classList.add('food');
+        gameboard.appendChild(khanaElement);
+    }
+
 //logics
 window.requestAnimationFrame(body);
 window.addEventListener('keydown', e => {
@@ -118,4 +118,4 @@ window.addEventListener('keydown', e => {
             break;
     }
 
-});
+})
