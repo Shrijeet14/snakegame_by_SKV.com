@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pic1{
+    background:url(./img1.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimg{
+    background:url(./myimg.jpg);
+    background-size:15vmin 15vmin;
+    border-radius:100px;
+    min-height:15vmin;
+    width: 15vmin;
+    height: 15vmin;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 15vmin;
+    height: 15vmin;
+    left:1050px;
+    top: -200px;
+}
+#gameboard{
+    position: relative;
+    background: linear-gradient(yellow,green);
+    width: 95vmin;
+    height: 95vmin;
+    left: -15px;
+    border: 10px ridge rgb(252, 77, 106);
+    display:grid;
+    grid-template-rows:repeat(30,1fr);
+    grid-template-columns:repeat(30,1fr);
+}
+#points{
+    position: relative;
+    top: -290px;
+    right: 190px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Climate Crisis', cursive;
+    z-index: 1;
+}
+.head{
+    background:linear-gradient(red , yellow);
+    border-radius: 100px;
+    transform: scale(1.2);
+}
+.snakebody{
+    background-color: purple;
+    /* background-color:rgb(249, 112, 62); */
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.food{
+    background-color: rgb(249, 112, 62);
+    border: 2px dashed black;
+    border-radius: 100px;
+}
